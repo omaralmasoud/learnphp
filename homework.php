@@ -9,7 +9,14 @@ $password = $_POST['password'];
 $user = array('omar','ahmad','mohammad');
 $pass = '123';
 
-
+       if ($username == $user[0] || $username == $user[1] || $username == $user[2] and $password == $pass)
+       {
+           // lgoin
+           echo 'تسجيل دخول ناجح';
+       }else
+       {
+           echo 'تسجيل دخول خاطئ';
+       }
     // check if username in $user array and print success login
 
 

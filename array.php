@@ -12,5 +12,7 @@ echo $ages;
 echo '</br>';
 // To Print array we should use print_r
 echo print_r($ages);
+echo '</br>';
+echo $ages[3];
 
  ?>
