@@ -4,7 +4,7 @@
 
 // the login page is the one of most important part of any web site
 // up to now we learend a lot of things and let's try is we can make a login page
-
+if($_POST){
 $username = $_POST['username'];
 $password = $_POST['password'];
     $rightuser = 'omar';
@@ -13,13 +13,14 @@ $password = $_POST['password'];
     if ($username == $rightuser and $password == $rightpass)
     {
         echo 'تسجيل دخول ناجح';
+        header("Location: index.php?user=omar");
     }else
     {
         echo 'تسجيل دخول غير صحيح';
     }
 
 
-
+}
 
  ?>
 
