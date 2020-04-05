@@ -13,6 +13,11 @@ $password = $_POST['password'];
     if ($username == $rightuser and $password == $rightpass)
     {
         echo 'تسجيل دخول ناجح';
+        $name = 'login';
+        $value = 1;
+        $exp = time() + 60*60*24*7;
+
+    setcookie($name,$value,$exp);
         header("Location: index.php?user=omar");
     }else
     {

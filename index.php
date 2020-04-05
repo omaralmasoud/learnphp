@@ -7,9 +7,21 @@ include 'header.php';
 
 // the main page 
 echo 'Welcome to php from scratch </br> by Omar Masoud </br>';
-if($_GET){
+if(isset($_COOKIE['login']))
+{
+    if($_COOKIE['login'] == 1)
+    {
+
+if($_GET)
+        {
     $user = $_GET['user'];
     echo 'اهلا بك يا '.$user;
+        }
+    }
+}else 
+{
+    echo 'يرجى تسجيل الدخول </br>';
+    echo '<a href="login.php" >تسجيل دخول</a>';
 }
 // We will use html tags like </br> it's mean new line
 // We will use echo in php mean print something
