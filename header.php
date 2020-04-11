@@ -1,3 +1,10 @@
+<?php
+
+require 'config.php';
+
+
+?>
+
 <html dir="rtl">
 <body>
 </br>
